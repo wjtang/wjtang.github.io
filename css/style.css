@@ -644,6 +644,14 @@ article footer .addthis iframe {
   margin-bottom: 30px;
   word-wrap: break-word;
 }
+#sidebar .message {
+  background: #fff;
+  -webkit-box-shadow: 1px 2px 3px #ddd;
+  box-shadow: 1px 2px 3px #ddd;
+  margin-bottom: 30px;
+  h: , p;
+  text-align: center;
+}
 #footer {
   color: #999;
   margin-bottom: 50px;
