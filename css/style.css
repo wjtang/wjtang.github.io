@@ -649,6 +649,7 @@ article footer .addthis iframe {
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
   margin-bottom: 30px;
+  border-bottom-right-radius: 30px;
   h: , p;
   text-align: center;
 }
