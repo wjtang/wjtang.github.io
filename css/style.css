@@ -83,6 +83,14 @@ a:hover {
   animation: shake 2s;
   -webkit-animation: shake 2s;
 }
+.shake:hover {
+  -webkit-animation: shake 0.2s infinite;
+  -webkit-animation: shake 0.2s infinite;
+  -moz-animation: shake 0.2s infinite;
+  -o-animation: shake 0.2s infinite;
+  -ms-animation: shake 0.2s infinite;
+  animation: shake 0.2s infinite;
+}
 #main-col {
   width: 900px;
 }
