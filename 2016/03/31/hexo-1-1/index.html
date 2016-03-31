@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>第一篇博文 | JTang`s blog</title>
+  <title>hexo 菜单栏震动效果 | JTang`s blog</title>
   <meta name="author" content="wjt.">
   
   <meta name="description" content="IT,悬疑 恐怖电影,music。">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="第一篇博文"/>
+  <meta property="og:title" content="hexo 菜单栏震动效果"/>
   <meta property="og:site_name" content="JTang`s blog"/>
 
   
@@ -55,28 +55,30 @@
     <header>
       
         <div class="icon"></div>
-        <time datetime="2016-03-28T08:49:27.000Z"><a href="/2016/03/28/my-new-post/">2016-03-28</a></time>
+        <time datetime="2016-03-31T04:32:50.000Z"><a href="/2016/03/31/hexo-1-1/">2016-03-31</a></time>
       
       
   
-    <h1 class="title">第一篇博文</h1>
+    <h1 class="title">hexo 菜单栏震动效果</h1>
   
 
     </header>
     <div class="entry">
       
-        
+        <p>#hexo 菜单栏的震动效果<br>　　搞了hexo这个框架的博客好几天了,终于有点时间来更新一下关于这个框架的博文。当然这个<br>博文也是为了怕自己忘记了一些重要的技术点,所以写的博客。当然,如果能帮到有这个需求的人<br>也是不错的。至于关于hexo的搭建还有相关技术的,我就不去写了,因为网络上有好多。当然,如果<br>你们有其他找不到的问题也可以留言,我能解决我会尽量去帮助你们。好了进入主题,关于这个震动<br>效果,是CSS3的动画效果,主要用了keyframes 这个规则,代码如下:<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">.shake</span><br><span class="line">  animation shake 2s </span><br><span class="line">  -webkit-animation shake 2s</span><br><span class="line"></span><br><span class="line">.shake:hover</span><br><span class="line">  -webkit-animation:shake 0.2s infinite;</span><br><span class="line">  animation:shake 0.2s infinite;</span><br><span class="line"></span><br><span class="line"> @keyframes shake</span><br><span class="line">     0%</span><br><span class="line">      transform translate(2px ,2px)</span><br><span class="line">     25%</span><br><span class="line">      transform translate(-2px, -2px)</span><br><span class="line">     50%</span><br><span class="line">      transform translate(0px, 0px)</span><br><span class="line">     75%</span><br><span class="line">      transform translate(2px, -2px)</span><br><span class="line">     100%</span><br><span class="line">      transform translate(-2px, 2px)</span><br></pre></td></tr></table></figure></p>
+<p>这是我在layout.style 里面加的,在每个list 加入clss=”shake” 就可以了。效果是首次进入博客,菜单栏会自动阵容2s,然后每次鼠标移动到相应的菜单,该项会阵容。如果有不懂请去查找关于hover<br>的用法,这里不作解释了。</p>
+
       
     </div>
     <footer>
       
         
-        
   
-  <div class="tags">
-    <a href="/tags/hello-world/">hello world. ~ . ~</a>
+  <div class="categories">
+    <a href="/categories/hexo/">hexo</a>
   </div>
 
+        
         <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
       
